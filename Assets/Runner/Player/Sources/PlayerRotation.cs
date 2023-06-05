@@ -1,5 +1,4 @@
-using System.Threading.Tasks;
-using FlexEngine.Essence;
+using System.Collections;
 using FlexEngine.Essence.UnityExtensions;
 using Runner.Level;
 using UnityEngine;
@@ -11,7 +10,9 @@ namespace Runner.Player
         private Direction _currentDirection;
         private Direction _startDirection;
         private IReadOnlySpeed _speed;
-        private const float speedRotationMultiplier = 1f;
+        
+        //sorry for that ^_^
+        private const float speedRotationMultiplier = 19f;
 
         public void Initialize(Direction startDirection, IReadOnlySpeed speed)
         {
@@ -26,21 +27,22 @@ namespace Runner.Player
             SetRotation(directionQuaternion);
         }
         
-        public async Task RotateTo(Direction direction)
+        public void RotateTo(Direction direction)
         {
-            Quaternion additionalDirection = DirectionsMap.GetDirectionQuaternion(direction);
-            Quaternion targetQuaternion = transform.rotation.Add(additionalDirection);
-            var time = 0f;
+            Quaternion additionalQuaternion = DirectionsMap.GetDirectionQuaternion(direction);
+            Quaternion targetQuaternion = transform.rotation.Add(additionalQuaternion);
+            StartCoroutine(RotationCoroutine(targetQuaternion));
+        }
 
+        private IEnumerator RotationCoroutine(Quaternion targetQuaternion)
+        {
             while (true)
             {
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetQuaternion, time * _speed.CurrentValue * speedRotationMultiplier);
-                await TimeAwaiter.WaitForSeconds(Time.deltaTime);
-                time += Time.deltaTime;
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetQuaternion, _speed.CurrentValue * speedRotationMultiplier * Time.deltaTime);
+                yield return null;
                 if (Mathf.Approximately(transform.rotation.eulerAngles.y, targetQuaternion.eulerAngles.y))
-                    return;
+                    break;
             }
-
         }
 
         private void SetRotation(Quaternion rotation)

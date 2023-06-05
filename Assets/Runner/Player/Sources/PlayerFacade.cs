@@ -44,7 +44,7 @@ namespace Runner.Player
 
         public void Initialize(PlayerConfig config, Vector3 startPosition, IReadOnlySpeed speed, Direction startDirection)
         {
-            _stateMachine = new PlayerStateMachine(_animator, _playerPosition, _playerJump, _playerInteraction, _trapInteraction);
+            _stateMachine = new PlayerStateMachine(_animator, _playerPosition, _playerJump);
             
             _playerJump.Initialize(config.JumpForce);
             _playerPosition.Initialize(startPosition, speed);
@@ -52,11 +52,9 @@ namespace Runner.Player
             _groundCheck.Initialize();
         }
 
-        private async void OnTurnTriggered(Direction direction)
+        private void OnTurnTriggered(Direction direction)
         {
-            _stateMachine.SetRotating();
-            await _playerRotation.RotateTo(direction);
-            _stateMachine.SetMoving();
+            _playerRotation.RotateTo(direction);
         }
 
         public void SetEnabled(bool value) => enabled = value;
@@ -73,7 +71,6 @@ namespace Runner.Player
         {
             _playerRotation.OnRestart();
             _playerPosition.OnRestart();
-            _stateMachine.SetInGame();
             _stateMachine.SetMoving();
         }
 
@@ -94,10 +91,8 @@ namespace Runner.Player
         
         public void SetInvulnerable(bool value)
         {
-            if (value)
-                _stateMachine.SetInvulnerable();
-            else
-                _stateMachine.SetVulnerable();
+            _trapInteraction.SetEnabled(!value);
+            _animator.SetInvulnerable(value);
         }
         
         private void OnGrounded()
@@ -118,7 +113,6 @@ namespace Runner.Player
         public void OnContinue()
         {
             _playerPosition.OnContinue();
-            _stateMachine.SetInGame();
             _stateMachine.SetMoving();
         }
 
