@@ -83,9 +83,13 @@ namespace Runner.Player
             _playerJump.DoJump();
 
             if (grounded)
+            {
                 _stateMachine.SetJumping();
+            }
             else
+            {
                 _stateMachine.SetDoubleJumping();
+            }
         }
         
         public void SetInvulnerable(bool value)

@@ -13,7 +13,6 @@ namespace Runner.Player.StateMachine
         {
             Animator.SetInvulnerable(true);
             Position.SetEnabled(true);
-            Jump.SetEnabled(true);
             Interaction.SetEnabled(true);
             TrapInteraction.SetEnabled(false);
         }
