@@ -33,6 +33,7 @@ namespace Runner.Player
             _playerInteraction.TurnTriggered += OnTurnTriggered;
             _groundCheck.OnGround += OnGrounded;
             _trapInteraction.ContinuePositionSaved += _playerPosition.CacheContinuePosition;
+            _trapInteraction.PitReached += OnPitReached;
         }
 
         private void OnDisable()
@@ -40,6 +41,7 @@ namespace Runner.Player
             _playerInteraction.TurnTriggered -= OnTurnTriggered;
             _groundCheck.OnGround -= OnGrounded;
             _trapInteraction.ContinuePositionSaved -= _playerPosition.CacheContinuePosition;
+            _trapInteraction.PitReached -= OnPitReached;
         }
 
         public void Initialize(PlayerConfig config, Vector3 startPosition, IReadOnlySpeed speed, Direction startDirection)
@@ -72,6 +74,11 @@ namespace Runner.Player
             _playerRotation.OnRestart();
             _playerPosition.OnRestart();
             _stateMachine.SetMoving();
+        }
+        
+        private void OnPitReached()
+        {
+            _playerPosition.OnContinue();
         }
 
         public void OnJumpTriggered()
