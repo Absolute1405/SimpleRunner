@@ -200,6 +200,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2350595643809843585, guid: 81ebef330181ccb42b63983b09524d97, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350595643948346475, guid: 81ebef330181ccb42b63983b09524d97, type: 3}
+      propertyPath: m_Size
+      value: 0.9999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350595643948346475, guid: 81ebef330181ccb42b63983b09524d97, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350595644102930801, guid: 81ebef330181ccb42b63983b09524d97, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2350595644102930802, guid: 81ebef330181ccb42b63983b09524d97, type: 3}
       propertyPath: m_Name
       value: UICanvas
