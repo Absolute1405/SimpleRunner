@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 245e2993ff796af4087a49da4ed48c07, type: 3}
+  m_Name: LevelLineBigPitChunkModel
+  m_EditorClassIdentifier: 
+  _id: chunk_BigPit
+  _template: {fileID: 3485131048370928888, guid: 44a47bec93c66cb42bcf45d806b42efd, type: 3}
+  _addressableTemplate:
+    m_AssetGUID: 44a47bec93c66cb42bcf45d806b42efd
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _priority: 3
+  _uiPreview:
+    m_AssetGUID: 789bacef00adc1e4b98027ce455d3761
+    m_SubObjectName: BitPitIcon
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_EditorAssetChanged: 0
+  _showInStatistic: 1
+  _canSpawnBooster: 0

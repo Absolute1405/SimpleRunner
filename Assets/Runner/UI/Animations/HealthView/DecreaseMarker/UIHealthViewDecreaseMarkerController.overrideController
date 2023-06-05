@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIHealthViewDecreaseMarkerController
+  m_Controller: {fileID: 9100000, guid: 3a04b56691e012545b3a92597c2e25f4, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: e3c68b1453b04784a9423096c24accad, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 61b6ad8f7588b244b97fb16c1992b442, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ace64159cf8c7824584fde9287f6da67, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5d8dd6f26ef57db47bfed51871385c10, type: 2}

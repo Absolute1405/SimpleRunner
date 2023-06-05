@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bad58eca863124fb6a15308c8863d8, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  _playerConfig:
+    _jumpForce: 5
+    _playerTemplate:
+      m_AssetGUID: e23c49d6a2b4b074d81b7e8ef1156e39
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  _statsConfig:
+    _basicSpeed: 5
+    _boostedSpeed: 8
+    _speedBoostDuration: 5
+    _speedContinueSlowDuration: 5
+    _continueSpeed: 2.5
+    _invulnerableDuration: 3
+    _baseHealth: 3
+    _boosterHealthRegen: 1
+    _continueHealth: 1
+  _levelChunksSettings:
+    _generationSettings: {fileID: 11400000, guid: 6e44b320bb9c490419d70948e5528f32, type: 2}
+    _lineChunkModels:
+    - {fileID: 11400000, guid: 67a0c265901f6a8459e211e43f1e11b3, type: 2}
+    - {fileID: 11400000, guid: 4073d4b4a60db9b47ad5744784e33b18, type: 2}
+    - {fileID: 11400000, guid: 9b4d8febce8087f449efdfe68725d7ed, type: 2}
+    - {fileID: 11400000, guid: ef7737c0d40a9a34b8ff18e60c81baf7, type: 2}
+    - {fileID: 11400000, guid: 17d6a674e77ae5d4fab9810aaa046c70, type: 2}
+    _borderChunkModels:
+    - {fileID: 11400000, guid: 975c44e3e411eef418fb9f6ab4932f06, type: 2}
+    - {fileID: 11400000, guid: 063019c41102fa34887f84d29f0ef7f7, type: 2}
+    _endChunkModel: {fileID: 11400000, guid: 2a0eb6d397319f045883102fc91255a8, type: 2}
+  _levelChunksLineSettings:
+    _inlineChunksMinAmount: 6
+    _inlineChunksMaxAmount: 12
+    _template:
+      m_AssetGUID: 588c55addcf5d094abc3c0f93c3d4147
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  _linesAmount: 4
+  _startDirection: 1
+  _boostersConfig:
+    _boosterModels:
+    - {fileID: 11400000, guid: d3e84a0b518e763468e2cc0c3698863c, type: 2}
+    - {fileID: 11400000, guid: b4381f42269eb87459f4cab2d663c16a, type: 2}
+    - {fileID: 11400000, guid: aff4d89430ed15546ae5e7fd9cb31add, type: 2}
+    _boosterAppearChance: 0.502

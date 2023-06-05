@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cf3d61e4f0e1849b2d5e374044e348, type: 3}
+  m_Name: LevelBorderChunkModelToRight
+  m_EditorClassIdentifier: 
+  _id: chunk_ToRight
+  _template: {fileID: 3485131048370928888, guid: bdeca2fc708e9494ba2fe217b291c9b6, type: 3}
+  _addressableTemplate:
+    m_AssetGUID: bdeca2fc708e9494ba2fe217b291c9b6
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

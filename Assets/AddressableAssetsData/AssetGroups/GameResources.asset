@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: GameResources
+  m_EditorClassIdentifier: 
+  m_GroupName: GameResources
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a67775cdd3401cd44a0dec18e89a88fd
+  m_SerializeEntries:
+  - m_GUID: b4cddf306bae13f43a5dbc2bcc79234b
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelBorderChunkToLeft.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bdeca2fc708e9494ba2fe217b291c9b6
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelBorderChunkToRight.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 44a47bec93c66cb42bcf45d806b42efd
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelChunkBigPit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 78bf331304ab130429719188d439c945
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelChunkDefault.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c6ecd7104f584064cb618d5d9310d84c
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelChunkFence.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f27435fb694ac854bba6f992ba895930
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelChunkSaw.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 08872a9c91387b047b4613a62525b13d
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelChunkSmallPit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f082f90d65320f343b57c30016d85a7a
+    m_Address: Assets/Runner/Level/Prefabs/Chunks/LevelEndChunk.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 588c55addcf5d094abc3c0f93c3d4147
+    m_Address: Assets/Runner/Level/Prefabs/ChunksLine.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e23c49d6a2b4b074d81b7e8ef1156e39
+    m_Address: Assets/Runner/Player/Prefabs/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a4b0e74f992459a4ca21da97d25be0fa
+    m_Address: Assets/Runner/Boosters/Prefabs/SpeedBooster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ee61b7ee9487fb7498d3cf0d309fbdfe
+    m_Address: Assets/Runner/Boosters/Prefabs/InvulBooster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ca4b85b083eb882449ed718661454f96
+    m_Address: Assets/Runner/Boosters/Prefabs/HealthBooster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 789bacef00adc1e4b98027ce455d3761
+    m_Address: Assets/Runner/Level/Sprites/BitPitIcon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b8f54914a45bd84b866417b43759fdb
+    m_Address: Assets/Runner/Level/Sprites/FenceIcon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b4259257eceb0b243b0ed2de75a4501c
+    m_Address: Assets/Runner/Level/Sprites/SawIcon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f0facd0ecac01344b820846137ef7041
+    m_Address: Assets/Runner/Level/Sprites/SmallPitIcon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1fde31ce6f665db41ba793fce4769155, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 10e2b18ada1bdba4b8be07a91e2e8ae7, type: 2}
+    - {fileID: 11400000, guid: 42bc5e905ae6a5d49b63a76496c87746, type: 2}
