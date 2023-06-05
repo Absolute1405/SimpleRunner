@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using FlexEngine.Essence;
 using FlexEngine.Essence.UnityExtensions;

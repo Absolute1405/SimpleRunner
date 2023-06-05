@@ -10,7 +10,7 @@ namespace Runner.Player.StateMachine
         public override void ApplyStateRules()
         {
             Jump.SetEnabled(false);
-            Position.SetEnabled(true);
+            Position.SetEnabled(false);
             Interaction.SetEnabled(true);
             TrapInteraction.SetEnabled(false);
         }
