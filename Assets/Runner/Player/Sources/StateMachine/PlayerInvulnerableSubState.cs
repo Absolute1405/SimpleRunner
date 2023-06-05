@@ -12,9 +12,9 @@ namespace Runner.Player.StateMachine
         public override void ApplyStateRules()
         {
             Animator.SetInvulnerable(true);
-            Position.SetEnabled(true);
             Interaction.SetEnabled(true);
             TrapInteraction.SetEnabled(false);
+            
         }
     }
 }
