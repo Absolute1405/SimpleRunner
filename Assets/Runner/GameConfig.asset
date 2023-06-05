@@ -42,14 +42,14 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 063019c41102fa34887f84d29f0ef7f7, type: 2}
     _endChunkModel: {fileID: 11400000, guid: 2a0eb6d397319f045883102fc91255a8, type: 2}
   _levelChunksLineSettings:
-    _inlineChunksMinAmount: 6
-    _inlineChunksMaxAmount: 12
+    _inlineChunksMinAmount: 1
+    _inlineChunksMaxAmount: 2
     _template:
       m_AssetGUID: 588c55addcf5d094abc3c0f93c3d4147
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  _linesAmount: 4
+  _linesAmount: 3
   _startDirection: 1
   _boostersConfig:
     _boosterModels:
