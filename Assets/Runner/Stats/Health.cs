@@ -46,7 +46,7 @@ namespace Runner.Stats
         {
             var newValue = CurrentValue + _boosterValue;
 
-            if (newValue >= _startValue)
+            if (newValue > _startValue)
             {
                 CurrentValue = _startValue;
             }
