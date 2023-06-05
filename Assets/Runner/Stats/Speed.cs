@@ -1,5 +1,3 @@
-using System.Threading.Tasks;
-using FlexEngine.Essence.AppFlow;
 using Runner.GameFlow;
 using Runner.Shared;
 
@@ -56,6 +54,7 @@ namespace Runner.Player
         public void OnContinue()
         {
             _canBoostSpeed = false;
+            BoostTimer.StopTimer();
             CurrentValue = _continueSlowValue;
             SlowTimer.AddTime(_continueSlowDuration);
         }
