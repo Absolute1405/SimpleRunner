@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using FlexEngine.Essence.Animations;
 using UnityEngine;
 
@@ -11,9 +10,9 @@ namespace Runner.UI
 
         public UIScreenName ScreenName => _name;
 
-        public async Task SetVisibleAsync(bool value)
+        public void SetVisible(bool value)
         {
-            await _animator.SetValueAsync(value);
+            _animator.SetValue(value);
         }
     }
 

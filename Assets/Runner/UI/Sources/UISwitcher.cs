@@ -1,6 +1,5 @@
 using System.ComponentModel;
 using System.Linq;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Runner.UI
@@ -11,7 +10,7 @@ namespace Runner.UI
 
         private UIScreen _currentScreen;
 
-        public async Task SetScreen(UIScreenName name)
+        public void SetScreen(UIScreenName name)
         {
             UIScreen screen = _screens.FirstOrDefault(x => x.ScreenName == name);
 
@@ -19,9 +18,9 @@ namespace Runner.UI
                 throw new InvalidEnumArgumentException($"Can find screen named {name}");
 
             if (_currentScreen != null)
-                await _currentScreen.SetVisibleAsync(false);
+                _currentScreen.SetVisible(false);
 
-            await screen.SetVisibleAsync(true);
+            screen.SetVisible(true);
             _currentScreen = screen;
         }
     }

@@ -39,29 +39,29 @@ namespace Runner.UI
             _statistics.Initialize(statistics, chunkModels);
         }
 
-        public async void OnRestart()
+        public void OnRestart()
         {
             _statistics.SetVisible(false);
             _healthView.OnRestart();
-            await _switcher.SetScreen(UIScreenName.InGame);
+            _switcher.SetScreen(UIScreenName.InGame);
         }
 
-        public async void OnGameOver()
+        public void OnGameOver()
         {
-            await _switcher.SetScreen(UIScreenName.GameOver);
+            _switcher.SetScreen(UIScreenName.GameOver);
             _statistics.Refresh();
             _statistics.SetVisible(true);
         }
 
-        public async void OnContinue()
+        public void OnContinue()
         {
             _statistics.SetVisible(false);
-            await _switcher.SetScreen(UIScreenName.InGame);
+            _switcher.SetScreen(UIScreenName.InGame);
         }
 
-        public async void OnVictory()
+        public void OnVictory()
         {
-            await _switcher.SetScreen(UIScreenName.Victory);
+            _switcher.SetScreen(UIScreenName.Victory);
             _statistics.Refresh();
             _statistics.SetVisible(true);
         }
